@@ -1,0 +1,79 @@
+/*body ภาพรวม*/
+.body{
+    text-align: center;
+}
+
+/*login กรอบ*/
+.login{
+    margin-top: 100px;
+    background-color: rgb(245, 221, 132);
+    color: rgb(74, 59, 34);
+    display: inline-block;
+    width: 300px;
+    border: solid rgb(74, 117, 74);
+    transform: rotate(-5deg);
+    border-radius: 45px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.575), 0 17px 50px 0 rgba(0, 0, 0, 0.334);
+}
+/*ตัวหนังสือ*/
+.otis{
+    font-size: 80px;
+}
+
+/*web กรอบ*/
+.web {
+    margin-top: 30px;
+    background-color: rgb(245, 221, 132);
+    color: rgb(74, 59, 34);
+    display: inline-block;
+    width: 200px;
+    border: solid rgb(74, 117, 74);
+    border-radius: 45px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.5), 0 17px 50px 0 rgba(0, 0, 0, 0.292);
+}
+/*ตัวหนังสือ web*/
+.WEB{
+    font-size: 40px;
+}
+
+/*welcome กรอบ*/
+.wel{
+    margin-top: 35px;
+    color: whitesmoke;
+}
+/*ตัวหนังสือ welcome*/
+.Wel{
+    font-size: 30px;
+}
+
+/*ภาพรวมปุ่มทั้งหมด*/
+
+/*เข้าสู่ระบบ*/
+.systemlog{
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*แบบไร้ตัวตน*/
+.noname{
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*สมัคร*/
+.apply{
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*ตัวหนังสือทุกปุ่ม*/
+.text{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.875);
+    font-size: 25px;
+}
+
+/*ปุ่มทุกอัน*/
+.btn{
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.501), 0 17px 50px 0 rgba(0, 0, 0, 0.392);
+}

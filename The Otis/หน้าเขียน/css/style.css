@@ -1,0 +1,134 @@
+/*the otis*/
+.logo {
+    margin: 10px;
+    color: rgb(231, 225, 165);
+}
+
+/*แท็บบน*/
+.navbar {
+    background-color: rgba(87, 131, 91, 0.707);
+    height: 100px;
+}
+
+/*nav-item*/
+.nav-item {
+    font-size: 35px;
+}
+
+/*หมวดหมู่*/
+.dropdown {
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*ตัวเลือก*/
+.dropdown-item {
+    font-size: 25px;
+}
+
+/*search*/
+.form-control {
+    margin: auto;
+}
+
+.btn {
+    margin: 10px;
+    background-color: rgb(239, 220, 195);
+}
+
+.button {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+
+/**/
+.Top{
+    text-align: center;
+}
+/**/
+.top{
+    text-align: center;
+    display: inline-block;
+    height: auto;
+    margin-top: 150px;
+}
+.boxtop{
+    text-align: center;
+    display: inline-block;
+    height: auto;
+}
+.box{
+    text-align: center;
+    display: inline-block;
+    height: auto;
+}
+.photo{
+    border-radius: 10px;
+    margin: 50px;
+}
+
+/**/
+.label{
+    font-size: 30px;
+}
+
+
+/**/
+.option{
+    display: inline-block;
+    margin: 30px;
+}
+.textop{
+    display: inline-block;
+    font-size: 30px;
+}
+.op{
+    display: inline-block;
+    font-size: 25px;
+}
+
+.store-2{
+    text-align: center;
+}
+.store-1{
+    text-align: center;
+    display: inline-block;
+    height: auto;
+    margin-top: 80px;
+}
+.boxstore{
+    text-align: center;
+    display: inline-block;
+    height: auto;
+}
+.box-1{
+    text-align: center;
+    display: inline-block;
+    height: auto;
+    margin: 15px;
+}
+
+/**/
+.textarea{
+    width: 700px;
+    text-align: center;
+    display: inline-block;
+    height: auto;
+    font-size: 25px;
+}
+
+
+
+
+/*ส่วนท้าย*/
+.footer {
+    background-color: rgba(87, 131, 91, 0.707);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 100px;
+}
