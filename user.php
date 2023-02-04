@@ -17,7 +17,7 @@ if (!isset($_SESSION['user_login'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Page</title>
-    <link href="styleuser.css" rel="stylesheet">
+    <link href="css/styleuser.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
@@ -30,19 +30,19 @@ if (!isset($_SESSION['user_login'])) {
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <h1 class="logo">The Otis</h1>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="/INDEX/index.html" style="color: black;">Home</a>
+                        <a class="nav-link " aria-current="page" href="user.php" style="color: black;">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">หมวดหมู่</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/Y%20station/index.html">Y station</a>
+                            <li><a class="dropdown-item" href="Ystation.php">Y station</a>
                             </li>
-                            <li><a class="dropdown-item" href="/Drama/index.html">Drama</a></li>
-                            <li><a class="dropdown-item" href="/Diary%20Day/index.html">Diary Day</a></li>
-                            <li><a class="dropdown-item" href="/Fantasy/index.html">Fantasy</a>
+                            <li><a class="dropdown-item" href="drama.php">Drama</a></li>
+                            <li><a class="dropdown-item" href="diary.php">Diary Day</a></li>
+                            <li><a class="dropdown-item" href="fantasy.php">Fantasy</a>
                             </li>
-                            <li><a class="dropdown-item" href="/The Otis/Comedy/Comedy.php">Comedy</a></li>
-                            <li><a class="dropdown-item" href="/Lovely/index.html">Lovely</a></li>
+                            <li><a class="dropdown-item" href="Comedy.php">Comedy</a></li>
+                            <li><a class="dropdown-item" href="Lovely.php">Lovely</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -344,4 +344,5 @@ if (!isset($_SESSION['user_login'])) {
         Copyright@2023
     </p>
 </footer>
+
 </html>

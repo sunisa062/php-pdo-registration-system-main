@@ -17,7 +17,7 @@ if (!isset($_SESSION['user_login'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Page</title>
-    <link href="styleuser.css" rel="stylesheet">
+    <link href="css/stylecom.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
@@ -30,19 +30,19 @@ if (!isset($_SESSION['user_login'])) {
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <h1 class="logo">The Otis</h1>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="/INDEX/index.html" style="color: black;">Home</a>
+                        <a class="nav-link " aria-current="page" href="user.php" style="color: black;">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">หมวดหมู่</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/Y%20station/index.html">Y station</a>
+                            <li><a class="dropdown-item" href="Ystation">Y station</a>
                             </li>
-                            <li><a class="dropdown-item" href="/Drama/index.html">Drama</a></li>
-                            <li><a class="dropdown-item" href="/Diary%20Day/index.html">Diary Day</a></li>
-                            <li><a class="dropdown-item" href="/Fantasy/index.html">Fantasy</a>
+                            <li><a class="dropdown-item" href="drama.php">Drama</a></li>
+                            <li><a class="dropdown-item" href="diary.php">Diary Day</a></li>
+                            <li><a class="dropdown-item" href="fantasy.php">Fantasy</a>
                             </li>
-                            <li><a class="dropdown-item" href="/Comedy/index.html">Comedy</a></li>
-                            <li><a class="dropdown-item" href="/Lovely/index.html">Lovely</a></li>
+                            <li><a class="dropdown-item" href="Comedy.php">Comedy</a></li>
+                            <li><a class="dropdown-item" href="Lovely.php">Lovely</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -68,16 +68,16 @@ if (!isset($_SESSION['user_login'])) {
     <div class="index">
         <div class="group">
             <div class="sone">
-                <p class="cate">Comedy</p>
+                <p class="cate">Drama</p>
                 <div class="row row-cols-1 row-cols-md-6 g-4">
                     <div class="col">
                         <div class="card">
                             <div class="pho">
-                                <img src="ความหล่อกับผมที่พลิ้วไสว.jpeg" class="card-img" alt="...">
+                                <img src="ลาจาก.jpeg" class="card-img" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">
                                         <a href="" class="text">
-                                            ความหล่อกับผมพลิ้ว
+                                            ลาจาก
                                         </a>
                                     </h5>
                                 </div>
@@ -87,11 +87,11 @@ if (!isset($_SESSION['user_login'])) {
                     <div class="col">
                         <div class="card">
                             <div class="pho">
-                                <img src="โปรดอย่าหยุด.jpeg" class="card-img" alt="...">
+                                <img src="สายโลหิตอันเจือจาง.jpeg" class="card-img" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">
                                         <a href="" class="text">
-                                            โปรดอย่าหยุด
+                                            สายโลหิตอันเจือจาง
                                         </a>
                                     </h5>
                                 </div>
@@ -101,10 +101,10 @@ if (!isset($_SESSION['user_login'])) {
                     <div class="col">
                         <div class="card">
                             <div class="pho">
-                                <img src="จุ้ยอย่าแซ่บ.jpeg" class="card-img" alt="...">
+                                <img src="บักโต่ประหลาด.jpeg" class="card-img" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="" class="text">
-                                            จุ้ยอย่าแซ่บ
+                                            บักโต่ประหลาด
                                         </a></h5>
                                 </div>
                             </div>
@@ -113,10 +113,10 @@ if (!isset($_SESSION['user_login'])) {
                     <div class="col">
                         <div class="card">
                             <div class="pho">
-                                <img src="นรกก็แค่ชื่อน้ำพริก.jpg" class="card-img" alt="...">
+                                <img src="แผลใจ.jpeg" class="card-img" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="" class="text">
-                                            นรกก็แค่ชื่อน้ำพริก
+                                            แผลใจ
                                         </a></h5>
                                 </div>
                             </div>
@@ -125,10 +125,10 @@ if (!isset($_SESSION['user_login'])) {
                     <div class="col">
                         <div class="card">
                             <div class="pho">
-                                <img src="ตะเอ๋ ไอ้คนบาปหนา.jpeg" class="card-img" alt="...">
+                                <img src="กอดเสาเถียง.jpeg" class="card-img" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="" class="text">
-                                            ตะเอ๋ ไอ้คนบาปหนา
+                                            กอดเสาเถียง
                                         </a></h5>
                                 </div>
                             </div>
@@ -137,86 +137,10 @@ if (!isset($_SESSION['user_login'])) {
                     <div class="col">
                         <div class="card">
                             <div class="pho">
-                                <img src="ฟิตเนส ฟิตใจ.jpeg" class="card-img" alt="...">
+                                <img src="ความรักทำให้คนตาบอด.jpeg" class="card-img" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="" class="text">
-                                            ฟิตเนส ฟิตใจ
-                                        </a></h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="sone">
-                <div class="row row-cols-1 row-cols-md-6 g-4">
-                    <div class="col">
-                        <div class="card">
-                            <div class="pho">
-                                <img src="ผมว่าผมก็น่ารักนะ.jpeg" class="card-img" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title"><a href="" class="text">
-                                            ผมว่าผมก็น่ารักนะ
-                                        </a></h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="pho">
-                                <img src="หนอนทะเลทรายผู้เศร้าหมอง.jpeg" class="card-img" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title"><a href="" class="text">
-                                            หนอนทะเลผู้เศร้าหมอง
-                                        </a></h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="pho">
-                                <img src="หยุดนะ อีกกาเทย.jpeg" class="card-img" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title"><a href="" class="text">
-                                            หยุดนะ อีกกาเทย
-                                        </a></h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="pho">
-                                <img src="หวัดดีนายปลาไหล.jpeg" class="card-img" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title"><a href="" class="text">
-                                            หวัดดีนายปลาไหล
-                                        </a></h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="pho">
-                                <img src="หล่อลาก กระซวกใจน้อง.jpeg" class="card-img" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title"><a href="" class="text">
-                                            หล่อกระซวกใจน้อง
-                                        </a></h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="pho">
-                                <img src="รักนี้ยอมถวายสังฆทาน.jpeg" class="card-img" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title"><a href="" class="text">
-                                            รักนี้ยอมถวายสังฆทาน
+                                            ความรักทำให้คนตาบอด
                                         </a></h5>
                                 </div>
                             </div>
@@ -229,10 +153,10 @@ if (!isset($_SESSION['user_login'])) {
                     <div class="col">
                         <div class="card">
                             <div class="pho">
-                                <img src="เหม่งแตกเพราะแดกเยอะ.jpeg" class="card-img" alt="...">
+                                <img src="ความรักที่พูดไม่ได้.jpeg" class="card-img" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="" class="text">
-                                            เหม่งแตกเพราะแดก
+                                            ความรักที่พูดไม่ได้
                                         </a></h5>
                                 </div>
                             </div>
@@ -241,10 +165,10 @@ if (!isset($_SESSION['user_login'])) {
                     <div class="col">
                         <div class="card">
                             <div class="pho">
-                                <img src="กินเรามั้ยมนุษย์.jpeg" class="card-img" alt="...">
+                                <img src="เจ้าสาวนอกใจ.jpeg" class="card-img" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="" class="text">
-                                            กินเรามั้ยมนุษย์
+                                            เจ้าสาวนอกใจ
                                         </a></h5>
                                 </div>
                             </div>
@@ -253,10 +177,10 @@ if (!isset($_SESSION['user_login'])) {
                     <div class="col">
                         <div class="card">
                             <div class="pho">
-                                <img src="ใจเกเร.jpeg" class="card-img" alt="...">
+                                <img src="ตายเพราะรัก.jpeg" class="card-img" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="" class="text">
-                                            ใจเกเร
+                                            ตายเพราะรัก
                                         </a></h5>
                                 </div>
                             </div>
@@ -265,10 +189,10 @@ if (!isset($_SESSION['user_login'])) {
                     <div class="col">
                         <div class="card">
                             <div class="pho">
-                                <img src="จุ๊บเหม่งมีอะไร.jpeg" class="card-img" alt="...">
+                                <img src="ทรงอย่างแบดแซดอย่างบอย.jpeg" class="card-img" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="" class="text">
-                                            จุ๊บเหม่งมีอะไร
+                                            ทรงอย่างแบด
                                         </a></h5>
                                 </div>
                             </div>
@@ -277,10 +201,10 @@ if (!isset($_SESSION['user_login'])) {
                     <div class="col">
                         <div class="card">
                             <div class="pho">
-                                <img src="ผีน้อยน่ารัก.jpeg" class="card-img" alt="...">
+                                <img src="ที่ระบาย.jpeg" class="card-img" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="" class="text">
-                                            ผีน้อยน่ารัก
+                                            ที่ระบาย
                                         </a></h5>
                                 </div>
                             </div>
@@ -289,10 +213,10 @@ if (!isset($_SESSION['user_login'])) {
                     <div class="col">
                         <div class="card">
                             <div class="pho">
-                                <img src="อย่าชี้หน้านะนุ.jpeg" class="card-img" alt="...">
+                                <img src="มาเฟียหลายใจ.jpeg" class="card-img" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="" class="text">
-                                            อย่าชี้หน้านะนุด
+                                            มาเฟียหลายใจ
                                         </a></h5>
                                 </div>
                             </div>
@@ -305,10 +229,10 @@ if (!isset($_SESSION['user_login'])) {
                     <div class="col">
                         <div class="card">
                             <div class="pho">
-                                <img src="เหม็นแบ็ว.jpeg" class="card-img" alt="...">
+                                <img src="รักเราเป็นไปไม่ได้.jpeg" class="card-img" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="" class="text">
-                                            เหม็นแบ็ว
+                                            รักเราเป็นไปไม่ได้
                                         </a></h5>
                                 </div>
                             </div>
@@ -317,10 +241,10 @@ if (!isset($_SESSION['user_login'])) {
                     <div class="col">
                         <div class="card">
                             <div class="pho">
-                                <img src="โอ้โง่ กูหลอกมึง.jpeg" class="card-img" alt="...">
+                                <img src="รักสามเศร้า.jpeg" class="card-img" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="" class="text">
-                                            ไอ้โง่ กูหลอกมึง
+                                            รักสามเศร้า
                                         </a></h5>
                                 </div>
                             </div>
@@ -329,10 +253,10 @@ if (!isset($_SESSION['user_login'])) {
                     <div class="col">
                         <div class="card">
                             <div class="pho">
-                                <img src="ไหปานถูกทิ้ง.jpeg" class="card-img" alt="...">
+                                <img src="รักห่วยๆ.jpeg" class="card-img" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="" class="text">
-                                            ไหปานถูกทิ้ง
+                                            รักห่วยๆ
                                         </a></h5>
                                 </div>
                             </div>
@@ -341,10 +265,10 @@ if (!isset($_SESSION['user_login'])) {
                     <div class="col">
                         <div class="card">
                             <div class="pho">
-                                <img src="อย่ากร่างถ้ายังไม่หย่านม.jpeg" class="card-img" alt="...">
+                                <img src="ลาจาก.jpeg" class="card-img" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="" class="text">
-                                            อย่าถ้ายังไม่หย่านม
+                                            ลาจาก
                                         </a></h5>
                                 </div>
                             </div>
@@ -353,10 +277,10 @@ if (!isset($_SESSION['user_login'])) {
                     <div class="col">
                         <div class="card">
                             <div class="pho">
-                                <img src="จือปากปะ.jpeg" class="card-img" alt="...">
+                                <img src="วิวาห์ที่เศร้า.jpeg" class="card-img" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="" class="text">
-                                            จือปากปะ
+                                            วิวาห์ที่เศร้า
                                         </a></h5>
                                 </div>
                             </div>
@@ -365,10 +289,38 @@ if (!isset($_SESSION['user_login'])) {
                     <div class="col">
                         <div class="card">
                             <div class="pho">
-                                <img src="ปล่อยเราไปเถอะมนุษย์.jpeg" class="card-img" alt="...">
+                                <img src="สายโลหิตอันเจือจาง.jpeg" class="card-img" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="" class="text">
-                                            ปล่อยเราไปเถอะมนุษย์
+                                            สายโลหิตอันเจือจาง
+                                        </a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sone">
+                <div class="row row-cols-1 row-cols-md-6 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <div class="pho">
+                                <img src="อย่าโกรธเราเลยนะ.jpeg" class="card-img" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="" class="text">
+                                            อย่าโกรธเราเลยนะ
+                                        </a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="pho">
+                                <img src="แอบรักคนมีเจ้าของ.jpeg" class="card-img" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="" class="text">
+                                            แอบรักคนมีเจ้าของ
                                         </a></h5>
                                 </div>
                             </div>
