@@ -1,3 +1,11 @@
+<?php
+session_start();
+require_once 'config/db.php';
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,8 +13,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Page</title>
-    <link href="css/styleread.css" rel="stylesheet">
+    <title>read</title>
+    <link href="php/css/styleread.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
@@ -41,21 +49,32 @@
 
 <body>
     <center>
-        <div class="title" style="background-color: rgb(253,245,230); width:1200px">
-            <div class="store mb-3">
-                <label for="chapter" class="col-form-label">ตอนที่</label>
-                <input type="text" class="form-control" style="width: 100px;">
-            </div>
-            <div class="store mb-3">
-                <label class="col-form-label" for="text">ชื่อตอน</label><br>
-                <textarea type="text col=50" id="text" class="form-control" style="width: 1000px; height: 1000px;"></textarea>
-            </div>
+        <?php
+        $stmt = $conn->query("SELECT * FROM content");
+        $stmt->execute();
+        $content = $stmt->fetchAll();
+
+        if (!$content) {
+            echo "<p><td colspan='1' class='text-center'>ไม่พบตอน</td></p>";
+        } else {
+            foreach ($content as $content) {
+        ?>
+                <div class="title" style="background-color: rgb(253,245,230); width:1200px">
+                    <div class="store mb-3">
+                        <p class="title"><?php echo $chap['title']; ?></p>
+                            <!--ตอนที่--><label for="chapter" class="col-form-label">ตอนที่</label>
+                            <input type="text" class="form-control" style="width: 100px;">
+                    </div>
+                    <div class="store mb-3">
+                        <p class="content"><?php echo $content['content']; ?></p>
+                        <!--เนื้อหา--><label class="col-form-label" for="text">เนื้อหา</label><br>
+                        <textarea type="text col=50" id="text" class="form-control" style="width: 1000px; height: 1000px;"></textarea>
+                    </div>
+            <?php }
+        } ?>
     </center>
     <div class="button">
-        <button type="button" class="btn btn-dark">back</button>
-    </div>
-    <div class="button2">
-        <button type="button" class="btn btn-dark">next</button>
+        <button type="button" class="btn btn-dark">back</button><!--ปุ่มนี้ยังไม่เชื่อม-->
     </div>
     <footer class=" footer">
         <p>
@@ -66,6 +85,5 @@
     </div><!-- box -->
     </div>
 </body>
-
 
 </html>

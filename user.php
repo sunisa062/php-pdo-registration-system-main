@@ -91,7 +91,14 @@ if (!isset($_SESSION['user_login'])) {
             </div>
         </div>
         <div>
-            <p class="cate">นิยาย</p>
+            <center>
+                <p align="justify:50" style="margin-top: 90px;">
+                    <hr width="10%" size="3">
+                </p>
+                <p class="cate">นิยาย</p>
+                <p align="justify:40" style="margin-top: -50px;">
+                    <hr width="10%" size="3">
+                </p>
         </div>
     </div>
     <!--ส่วนนิยายที่เข้ามา-->
@@ -106,13 +113,15 @@ if (!isset($_SESSION['user_login'])) {
         foreach ($chap as $chap) {
     ?>
 
-            <div class="box">
-                <div class="boxcol" >
+            <div class="box" style="background-color: white;">
+                <div class="boxcol">
                     <div class="card">
                         <div class="col">
                             <td width="100px"><img class="rounded" width="100%" src="up/<?php echo $chap['img']; ?>" alt=""></td>
                         </div>
-                        <p><?php echo $chap['title']; ?></p>
+                        <p class="title"><?php echo $chap['title']; ?>
+                        <a href=""></a>
+                        </p>
                     </div>
                 </div>
             </div>
