@@ -23,18 +23,6 @@
     
 }
 
-/*หมวดหมู่*/
-.dropdown {
-    font-size: 25px;
-    margin-top: 10px;
-    text-align: center;
-}
-
-/*ตัวเลือก*/
-.dropdown-item {
-    font-size: 25px;
-}
-
 /*ชื่อผู้ใช้*/
 .mt-6{
     text-align: right;
@@ -51,8 +39,6 @@
     margin-top: -10px;
 }
 
-
-
 /*สไลด์*/
 .slide {
     width: 600px;
@@ -67,50 +53,6 @@
     height: 600px;
     margin: auto;
     border-radius: 45px;
-}
-
-/*ภาพรวมการ์ด*/
-.group {
-    margin: 60px;
-    padding: 100px;
-    border-radius: 45px;
-}
-
-.pho:hover {
-    box-shadow: 0 12px 16px 0 rgb(0, 0, 0);
-}
-
-/*หมวดหมู่*/
-.cate {
-    color: rgb(43, 70, 45);
-    font-size: 25px;
-    margin-top: 50px;
-}
-
-.cate1 {
-    color: rgb(43, 70, 45);
-    font-size: 25px;
-}
-
-.fic {
-    text-decoration: none;
-}
-
-/*card*/
-.card {
-    text-align: center;
-    box-shadow: 0 12px 16px 0 rgb(0, 0, 0);
-}
-
-/*รูปในการ์ด*/
-.card-img {
-    height: 200px;
-}
-
-/**/
-.text {
-    text-decoration: none;
-    color: black;
 }
 
 /*ส่วนท้าย*/
