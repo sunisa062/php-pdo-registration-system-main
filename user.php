@@ -95,18 +95,19 @@ if (!isset($_SESSION['user_login'])) {
         </div>
     </div>
     <!--ส่วนนิยายที่เข้ามา-->
-        <?php
-        $stmt = $conn->query("SELECT * FROM chap");
-        $stmt->execute();
-        $chap = $stmt->fetchAll();
+    <?php
+    $stmt = $conn->query("SELECT * FROM chap");
+    $stmt->execute();
+    $chap = $stmt->fetchAll();
 
-        if (!$chap) {
-            echo "<p><td colspan='1' class='text-center'>ไม่พบตอน</td></p>";
-        } else {
-            foreach ($chap as $chap) {
-        ?>
+    if (!$chap) {
+        echo "<p><td colspan='1' class='text-center'>ไม่พบตอน</td></p>";
+    } else {
+        foreach ($chap as $chap) {
+    ?>
 
-                <div class="box" style="background-color: green;">
+            <div class="box">
+                <div class="boxcol" >
                     <div class="card">
                         <div class="col">
                             <td width="100px"><img class="rounded" width="100%" src="up/<?php echo $chap['img']; ?>" alt=""></td>
@@ -114,8 +115,9 @@ if (!isset($_SESSION['user_login'])) {
                         <p><?php echo $chap['title']; ?></p>
                     </div>
                 </div>
-<?php }
-        } ?>
+            </div>
+    <?php }
+    } ?>
 </body>
 <footer class="footer">
     <p>
