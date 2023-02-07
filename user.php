@@ -102,6 +102,7 @@ if (!isset($_SESSION['user_login'])) {
         </div>
     </div>
     <!--ส่วนนิยายที่เข้ามา-->
+    <center>
     <?php
     $stmt = $conn->query("SELECT * FROM chap");
     $stmt->execute();
@@ -112,15 +113,15 @@ if (!isset($_SESSION['user_login'])) {
     } else {
         foreach ($chap as $chap) {
     ?>
-
-            <div class="box" style="background-color: white;">
+</center>
+            <div class="box" style="background-color: rgb(0, 0, 0);">
                 <div class="boxcol">
                     <div class="card">
                         <div class="col">
                             <td width="100px"><img class="rounded" width="100%" src="up/<?php echo $chap['img']; ?>" alt=""></td>
                         </div>
                         <p class="title"><?php echo $chap['title']; ?>
-                        <a href=""></a>
+                            <a href=""></a>
                         </p>
                     </div>
                 </div>

@@ -34,8 +34,9 @@ require_once 'config/db.php';
         </nav>
 </header>
 
-<body>
-        <center>
+<body style="background-color:  rgba(233, 235, 229, 0.858);">
+    <div class="index">
+        <div class="row" style="text-align: center;">
             <?php
             $stmt = $conn->query("SELECT * FROM episode");
             $stmt->execute();
@@ -45,23 +46,27 @@ require_once 'config/db.php';
                 echo "<p><td colspan='1' class='text-center'>ไม่พบเนื้อหา</td></p>";
             } else {
                 foreach ($episode as $episode) {
-            ?>
-                    <div class="box" style="background-color: black; height:auto;">
-                        <div class="title" style="background-color: rgb(253,245,230); width:1200px">
-                            <div class="store mb-3" style="background-color: yellow;">
-                                <p class="chapter"><?php echo $episode['chapter']; ?></p>
-                            </div>
-                            <div class="store mb-3" style="background-color: green;">
-                                <p class="content"><?php echo $episode['content']; ?></p>
+            ?> <center>
+                        <div class="box" style="background-color: rgb(253,245,230); height:auto; width: 900px;">
+                            <div class="title" style="background-color: rgb(253,245,230); width: 800px;">
+                                <div class="store1 mb-3" style="background-color: rgb(253,245,230);">
+                                    <p class="chapter"><?php echo $episode['chapter']; ?></p>
+                                </div>
+                                <div class="store2 mb-3" style="background-color: rgb(253,245,230);">
+                                    <p class="content"><?php echo $episode['content']; ?></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-            <?php }
+        
+<?php }
             } ?>
-        </center>
-        <div class="button">
-            <button type="button" class="btn btn-dark">back</button><!--ปุ่มนี้ยังไม่เชื่อม-->
-        </div>
+<div class="button">
+    <a href="user.php">
+    <button type="button" class="btn btn-outline-dark" style="font-size: 30px;">back</button><!--ปุ่มนี้ยังไม่เชื่อม-->
+    </a>
+</div>
+    </div>
+</div>
     <footer class=" footer">
         <p>
             Copyright@2023
