@@ -1,59 +1,76 @@
-/*index ภาพรวม
+/*index ภาพรวม*/
 .index {
     text-align: center;
-}*/
+}
 
 
-/*the otis
+/*the otis*/
 .logo {
     margin: 10px;
     color: rgb(231, 225, 165);
     font-size: 30px;
     width: 100px;
-}*/
+}
 
-/*แท็บบน
+/*แท็บบน*/
 .navbar {
     background-color: rgba(87, 131, 91, 0.707);
     height: 100px;
-}*/
+}
 
-/*nav-item
+/*nav-item*/
 .nav-item {
     font-size: 35px;
+}
 
-/*ชื่อผู้ใช้
-.mt-6{
+/*ชื่อผู้ใช้*/
+.mt-6 {
     text-align: right;
 }
-.btn{
+
+.btn {
     float: right;
     width: 50px;
     height: 25px;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.464);
 }
-.text{
+
+.text {
     font-size: 20px;
     margin-left: -10px;
     margin-top: -10px;
-}*/
+}
 
-/*สไลด์
+/*สไลด์*/
 .slide {
     width: 600px;
     height: 600px;
     display: inline-block;
     margin: 20px;
-}*/
+}
+
+/*รูปสไลด์*/
 
 .d-block {
     width: 600px;
     height: 600px;
     margin: auto;
     border-radius: 45px;
-}*/
+}
 
-/*ส่วนท้าย
+
+.box{
+    width: 130px;
+    margin: 20px;
+    padding: 15px;
+    display: inline-block;
+}
+.card{
+    width: 100px;
+    display: inline-block;
+}
+
+/*ส่วนท้าย*/
 .footer {
     background-color: rgba(87, 131, 91, 0.707);
     text-align: center;
@@ -61,4 +78,4 @@
     padding: 20px;
     font-size: 20px;
     margin-top: 100px;
-}*/
+}
