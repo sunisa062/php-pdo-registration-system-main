@@ -120,9 +120,7 @@ if (!isset($_SESSION['user_login'])) {
                 <?php }
         } ?>
                     </div>
-                </center>
     </div>
-
 </body>
 <footer class="footer">
     <p>
