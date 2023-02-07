@@ -94,33 +94,7 @@ if (!isset($_SESSION['user_login'])) {
         </div>
 
 
-        <?php
-        $stmt = $conn->query("SELECT * FROM chap");
-        $stmt->execute();
-        $chap = $stmt->fetchAll();
-        if (!$chap) {
-            echo "<p><td colspan='2' class='text-center'>ไม่พบนิยาย</td></p>";
-        } else {
-            foreach ($chap as $chap) {
-        ?>
-        <center>
-                    <div class="row row-cols-1 row-cols-md-3 g-4 " style="width: 550px; background:black;">
-                        <div class="col d-inline" style="width: 150px;">
-                            <div class="card">
-                                <div class="pho">
-                                    <div class="image">
-                                        <img class="card" width="100%" src="up/<?php echo $chap['img']; ?>" alt="">
-                                        <div class="card-text" style="text-align: center;">
-                                            <a href="" class="text"><?php echo $chap['title']; ?></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                <?php }
-        } ?>
-                    </div>
-    </div>
+        
 </body>
 <footer class="footer">
     <p>
