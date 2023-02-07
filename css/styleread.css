@@ -20,25 +20,15 @@
 /*nav-item*/
 .nav-item {
     font-size: 35px;
-
 }
 
-/*หมวดหมู่*/
-.dropdown {
-    font-size: 25px;
-    margin-top: 10px;
-    text-align: center;
-}
 
-/*ตัวเลือก*/
-.dropdown-item {
-    font-size: 25px;
-}
+/**/
 
 /**/
 .title {
     height: auto;
-    margin: 50px;
+    margin: 150px;
 }
 
 /**/
@@ -72,5 +62,5 @@
     color: rgb(0, 0, 0);
     padding: 20px;
     font-size: 20px;
-    margin-top: auto;
+    margin-top: 150px;
 }
