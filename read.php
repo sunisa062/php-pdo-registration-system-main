@@ -1,6 +1,6 @@
 <?php
-session_start();
-require_once 'config/db.php';
+    session_start();
+    require_once 'config/db.php';
 ?>
 
 
@@ -50,23 +50,23 @@ require_once 'config/db.php';
 <body>
     <center>
         <?php
-        $stmt = $conn->query("SELECT * FROM content");
+        $stmt = $conn->query("SELECT * FROM episode");
         $stmt->execute();
-        $content = $stmt->fetchAll();
+        $episod = $stmt->fetchAll();
 
-        if (!$content) {
-            echo "<p><td colspan='1' class='text-center'>ไม่พบตอน</td></p>";
+        if (!$episode) {
+            echo "<p><td colspan='1' class='text-center'>ไม่พบเนื้อหา</td></p>";
         } else {
-            foreach ($content as $content) {
+            foreach ($episode as $episode) {
         ?>
                 <div class="title" style="background-color: rgb(253,245,230); width:1200px">
                     <div class="store mb-3">
-                        <p class="title"><?php echo $chap['title']; ?></p>
+                        <p class="title"><?php echo $episode['title']; ?></p>
                             <!--ตอนที่--><label for="chapter" class="col-form-label">ตอนที่</label>
                             <input type="text" class="form-control" style="width: 100px;">
                     </div>
                     <div class="store mb-3">
-                        <p class="content"><?php echo $content['content']; ?></p>
+                        <p class="content"><?php echo $episode['content']; ?></p>
                         <!--เนื้อหา--><label class="col-form-label" for="text">เนื้อหา</label><br>
                         <textarea type="text col=50" id="text" class="form-control" style="width: 1000px; height: 1000px;"></textarea>
                     </div>
