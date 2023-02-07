@@ -1,0 +1,76 @@
+/*index ภาพรวม*/
+.index {
+    text-align: center;
+}
+
+/*the otis*/
+.logo {
+    margin: 10px;
+    color: rgb(231, 225, 165);
+    font-size: 30px;
+    width: 100px;
+}
+
+/*แท็บบน*/
+.navbar {
+    background-color: rgba(87, 131, 91, 0.707);
+    height: 100px;
+}
+
+/*nav-item*/
+.nav-item {
+    font-size: 35px;
+
+}
+
+/*หมวดหมู่*/
+.dropdown {
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*ตัวเลือก*/
+.dropdown-item {
+    font-size: 25px;
+}
+
+/**/
+.title {
+    height: auto;
+    margin: 50px;
+}
+
+/**/
+.texthead{
+    color: rgb(45, 55, 42);
+    font-size:40px;
+}
+
+/**/
+.store{
+    margin-top: 50px;
+    font-size: 30px;
+    margin: 10px;
+}
+
+/*btn*/
+.button{
+    margin-top: 100px;
+    padding: 10px;
+}
+.button2 {
+    float:right;
+    padding: 5px;
+    margin-top: -53px;
+}
+
+/*ส่วนท้าย*/
+.footer {
+    background-color: rgba(87, 131, 91, 0.707);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    font-size: 20px;
+    margin-top: auto;
+}

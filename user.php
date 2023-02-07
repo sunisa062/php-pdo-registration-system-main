@@ -21,7 +21,9 @@ if (!isset($_SESSION['user_login'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+
+    </style>
 </head>
 <header>
     <font face="MN KIMCHI NEW">
@@ -31,19 +33,6 @@ if (!isset($_SESSION['user_login'])) {
                     <h1 class="logo">The Otis</h1>
                     <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="user.php" style="color: black;">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">หมวดหมู่</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="Ystation.php">Y station</a>
-                            </li>
-                            <li><a class="dropdown-item" href="drama.php">Drama</a></li>
-                            <li><a class="dropdown-item" href="diary.php">Diary Day</a></li>
-                            <li><a class="dropdown-item" href="fantasy.php">Fantasy</a>
-                            </li>
-                            <li><a class="dropdown-item" href="Comedy.php">Comedy</a></li>
-                            <li><a class="dropdown-item" href="Lovely.php">Lovely</a></li>
-                        </ul>
                     </li>
                 </ul>
                 <div class="container">
@@ -75,7 +64,7 @@ if (!isset($_SESSION['user_login'])) {
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <a href="/LOGIN/LOGIN.html">
+                        <a href="">
                             <img src="img/จุ้ยอย่าแซ่บ.jpeg" class="d-block " alt="">
                         </a>
                     </div>
@@ -100,244 +89,40 @@ if (!isset($_SESSION['user_login'])) {
                 </button>
             </div>
         </div>
-        <div class="group">
-            <a href="" class="fic">
-                <p class="cate1">หมวดหมู่แนะนำ</p>
-            </a>
-            <div class="row row-cols-1 row-cols-md-6 g-4">
-                <div class="col">
-                    <div class="card">
-                        <div class="pho">
-                            <img src="รักนี้ยอมถวายสังฆทาน.jpeg" class="card-img" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    <a href="" class="text">
-                                        รักนี้ยอมถวายสังฆทาน
-                                    </a>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="pho">
-                            <img src="โปรดอย่าหยุด.jpeg" class="card-img" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    <a href="" class="text">
-                                        โปรดอย่าหยุด
-                                    </a>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="pho">
-                            <img src="ข้าคือแมวผู้ครองโลก.jpeg" class="card-img" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="" class="text">
-                                        ข้าคือแมวผู้ครองโลก
-                                    </a></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="pho">
-                            <img src="ความหล่อกับผมที่พลิ้วไสว.jpeg" class="card-img" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="" class="text">
-                                        ความหล่อกับผมพลิ้ว
-                                    </a></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="pho">
-                            <img src="ตะเอ๋ ไอ้คนบาปหนา.jpeg" class="card-img" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="" class="text">
-                                        ตะเอ๋ ไอ้คนบาปหนา
-                                    </a></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="pho">
-                            <img src="ผมว่าผมก็น่ารักนะ.jpeg" class="card-img" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="" class="text">
-                                        ผมว่าผมก็น่ารักนะ
-                                    </a></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a href="/Y%20station/index.html" class="fic">
-                <p class="cate">Y station</p>
-            </a>
-            <div class="row row-cols-1 row-cols-md-6 g-4">
-                <div class="col">
-                    <div class="card">
-                        <div class="pho">
-                            <img src="รักแรก มักแฟน.jpeg" class="card-img" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="" class="text">
-                                        รักแรก มักแฟน
-                                    </a></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="pho">
-                            <img src="ไม้สี มอเสด.jpeg" class="card-img" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="" class="text">
-                                        ไม้สี มอเสด
-                                    </a></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="pho">
-                            <img src="ไอ้เนิร์ดเด็กสร้าง.jpeg" class="card-img" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="" class="text">
-                                        ไอ้เนิร์ดเด็กสร้าง
-                                    </a></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="pho">
-                            <img src="กลิ่นเธอเหมื่อนหญ้าเปียก.jpeg" class="card-img" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="" class="text">
-                                        กลิ่นเหมือนหญ้าเปียก
-                                    </a></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="pho">
-                            <img src="ผู้สร้างสรรค์ชั้นเอก.jpeg" class="card-img" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="" class="text">
-                                        ผู้สร้างสรรค์ชั้นเอก
-                                    </a></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="pho">
-                            <img src="ไอ้ต้าวหมาเงย.jpeg" class="card-img" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="" class="text">
-                                        ไอ้ต้าวหมาเงย
-                                    </a></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a href="/Diary%20Day/index.html" class="fic">
-                <p class="cate">Diary Day</p>
-            </a>
-            <div class="row row-cols-1 row-cols-md-6 g-4">
-                <div class="col">
-                    <div class="card">
-                        <div class="pho">
-                            <img src="บทเพลงขับกล่อม.jpeg" class="card-img" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="" class="text">
-                                        บทเพลงขับกล่อม
-                                    </a></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="pho">
-                            <img src="ฝากเพลงช่วยบรรเลง.jpeg" class="card-img" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="" class="text">
-                                        ฝากเพลงช่วยบรรเลง
-                                    </a></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="pho">
-                            <img src="หวัดดีเองกลี.jpeg" class="card-img" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="" class="text">
-                                        หวัดดีเองกลี
-                                    </a></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="pho">
-                            <img src="ฝากถึงเธอผู้เป็นควยไรไอ้สัส.jpeg" class="card-img" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="" class="text">
-                                        ถึงเธอผู้เป็นควยไรไอ้สัส
-                                    </a></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="pho">
-                            <img src="ฝากเพลง.jpeg" class="card-img" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="" class="text">
-                                        ฝากเพลง
-                                    </a></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="pho">
-                            <img src="คลื่น.jpeg" class="card-img" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="" class="text">
-                                        คลื่น
-                                    </a></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div>
+            <p class="cate">นิยาย</p>
         </div>
+
+
+        <?php
+        $stmt = $conn->query("SELECT * FROM chap");
+        $stmt->execute();
+        $chap = $stmt->fetchAll();
+        if (!$chap) {
+            echo "<p><td colspan='2' class='text-center'>ไม่พบนิยาย</td></p>";
+        } else {
+            foreach ($chap as $chap) {
+        ?>
+        <center>
+                    <div class="row row-cols-1 row-cols-md-3 g-4 " style="width: 550px; background:black;">
+                        <div class="col d-inline" style="width: 150px;">
+                            <div class="card">
+                                <div class="pho">
+                                    <div class="image">
+                                        <img class="card" width="100%" src="up/<?php echo $chap['img']; ?>" alt="">
+                                        <div class="card-text" style="text-align: center;">
+                                            <a href="" class="text"><?php echo $chap['title']; ?></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                <?php }
+        } ?>
+                    </div>
+                </center>
     </div>
+
 </body>
 <footer class="footer">
     <p>
