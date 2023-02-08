@@ -140,7 +140,7 @@ if (isset($_GET['delete'])) {
                             <td><?php echo $chap['title']; ?></td>
                             <td>
                                 <a href="ad-edit.php?id=<?php echo $chap['id']; ?>" class="btn btn-outline-secondary">แก้ไขนิยาย</a>
-                                <a href="ad-add.php?id=<?php echo $chap['id']; ?>" class="btn btn-outline-secondary">เพิ่มตอน</a>
+                                <a href="ad-add.php?id=<?php echo $chap['title']; ?>" class="btn btn-outline-secondary">เพิ่มตอน</a> <!--ต้องแก้ตรงนี้-->
                                 <a onclick="return confirm('Are you sure you want to delete?');" href="?delete=<?php echo $chap['id']; ?>" class="btn btn-outline-danger">ลบนิยาย</a>
                             </td>
                         </tr>

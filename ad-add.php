@@ -119,7 +119,6 @@ if (isset($_GET['delete'])) {
                             <td width="100px"><img class="rounded" width="100%" src="photo/<?php echo $episode['img']; ?>" alt=""></td>
                             <td><?php echo $episode['chapter']; ?></td>
                             <td>
-                                <a href="ad-addedit.php" class="btn btn-outline-secondary">แก้ไข</a>
                                 <a onclick="return confirm('Are you sure you want to delete?');" href="?delete=<?php echo $episode['id']; ?>" class="btn btn-outline-danger">ลบตอน</a>
                             </td>
                         </tr>
