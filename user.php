@@ -114,8 +114,8 @@ if (!isset($_SESSION['user_login'])) {
             foreach ($chap as $chap) {
         ?>
     </center>
-    <div class="box" style="background-color: rgb(0, 0, 0); width">
-        <div class="boxcol" style="background-color: green;">
+    <div class="box" style="background-color: rgb(0, 0, 0);">
+        <div class="boxcol">
             <div class="card">
                 <div class="col">
                     <td width="100px"><img class="rounded" width="100%" src="up/<?php echo $chap['img']; ?>" alt=""></td>
