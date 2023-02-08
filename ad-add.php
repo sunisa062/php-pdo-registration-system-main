@@ -45,8 +45,8 @@ if (isset($_GET['delete'])) {
                             <img loading="lazy" width="100%" id="previewImg" alt="">
                         </div>
                         <div class="mb-3">
-                            <label for="chapter" class="col-form-label">chapter:</label>
-                            <input type="text" required class="form-control" name="chapter"> <!--required จะแจ้งเตือน หากไม่มีการใส่ข้อมูล-->
+                            <label for="title" class="col-form-label">title:</label>
+                            <input type="text" required class="form-control" name="title"> <!--required จะแจ้งเตือน หากไม่มีการใส่ข้อมูล-->
                         </div>
                         <div class="mb-3">
                             <label for="content" class="col-form-label">content:</label>
@@ -98,7 +98,7 @@ if (isset($_GET['delete'])) {
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Img</th>
-                    <th scope="col">chapter</th>
+                    <th scope="col">title</th>
                     <th scope="col">Actions</th>
                 </tr>
             </thead>
@@ -117,8 +117,9 @@ if (isset($_GET['delete'])) {
                         <tr>
                             <th scope="row"><?php echo $episode['id']; ?></th>
                             <td width="100px"><img class="rounded" width="100%" src="photo/<?php echo $episode['img']; ?>" alt=""></td>
-                            <td><?php echo $episode['chapter']; ?></td>
+                            <td><?php echo $episode['title']; ?></td>
                             <td>
+                                <!--ส่วนนี้แก้ดำิ่มยังไม่100%--> <a href="ad-add.php?id=<?php echo $episode['title']; ?>" class="btn btn-outline-secondary">เพิ่มลงนิยาย</a>
                                 <a onclick="return confirm('Are you sure you want to delete?');" href="?delete=<?php echo $episode['id']; ?>" class="btn btn-outline-danger">ลบตอน</a>
                             </td>
                         </tr>
