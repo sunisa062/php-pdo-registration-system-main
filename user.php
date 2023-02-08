@@ -103,31 +103,31 @@ if (!isset($_SESSION['user_login'])) {
     </div>
     <!--ส่วนนิยายที่เข้ามา-->
     <center>
-    <?php
-    $stmt = $conn->query("SELECT * FROM chap");
-    $stmt->execute();
-    $chap = $stmt->fetchAll();
+        <?php
+        $stmt = $conn->query("SELECT * FROM chap");
+        $stmt->execute();
+        $chap = $stmt->fetchAll();
 
-    if (!$chap) {
-        echo "<p><td colspan='1' class='text-center'>ไม่พบตอน</td></p>";
-    } else {
-        foreach ($chap as $chap) {
-    ?>
-</center>
-            <div class="box" style="background-color: rgb(0, 0, 0);">
-                <div class="boxcol">
-                    <div class="card">
-                        <div class="col">
-                            <td width="100px"><img class="rounded" width="100%" src="up/<?php echo $chap['img']; ?>" alt=""></td>
-                        </div>
-                        <p class="title"><?php echo $chap['title']; ?>
-                            <a href=""></a>
-                        </p>
-                    </div>
+        if (!$chap) {
+            echo "<p><td colspan='1' class='text-center'>ไม่พบตอน</td></p>";
+        } else {
+            foreach ($chap as $chap) {
+        ?>
+    </center>
+    <div class="box" style="background-color: rgb(0, 0, 0); width">
+        <div class="boxcol" style="background-color: green;">
+            <div class="card">
+                <div class="col">
+                    <td width="100px"><img class="rounded" width="100%" src="up/<?php echo $chap['img']; ?>" alt=""></td>
                 </div>
+                <p class="title"><?php echo $chap['title']; ?>
+                    <a href=""></a>
+                </p>
             </div>
-    <?php }
-    } ?>
+        </div>
+    </div>
+<?php }
+        } ?>
 </body>
 <footer class="footer">
     <p>
